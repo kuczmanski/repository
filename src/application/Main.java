@@ -14,7 +14,7 @@ public class Main {
 	public static void main(String[] args) {
 
 		Locale.setDefault(Locale.US);
-		Scanner sc = new Scanner(System.in);
+		//Scanner input = new Scanner(System.in);
 
 		Double radius = 2.0;
 		Double widthRectangle = 3.0;
@@ -23,12 +23,16 @@ public class Main {
 		Double heightTerreno = 15.0;
 
 		// System.out.println("Radius: ");
-		// Double radius = sc.nextDouble();
+		// Double radius = input.nextDouble();
 		// System.out.println("Width Rectangle: ");
-		// Double widthRectangle = sc.nextDouble();
+		// Double widthRectangle = input.nextDouble();
 		// System.out.println("Height Rectangle: ");
-		// Double heightRectangle = sc.nextDouble();
-
+		// Double heightRectangle = input.nextDouble();
+		// System.out.println("Width Terreno: ");
+		//Double widthTerreno = input.nextDouble();
+		// System.out.println("Height Terreno: ");
+		//Double heightTerreno = input.nextDouble();
+		
 		AbstractShape circle = new Circle(Color.BLACK, radius);
 		AbstractShape rectangle = new Rectangle(Color.WHITE, widthRectangle, heightRectangle);
 		Terrain terreno = new Terrain(widthTerreno, heightTerreno);
